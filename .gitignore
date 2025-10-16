@@ -1,0 +1,10 @@
+# Игнорируем подкаталог tmp
+tmp/
+
+# Игнорируем файлы с суффиксами _old и _backup
+*_old
+*_backup
+
+# Игнорируем системные файлы Windows и macOS
+Thumbs.db
+.DS_Store
