@@ -5,38 +5,124 @@
     <title>StudentHub</title>
 </head>
 <body>
-    <h1 id="title">
-        Welcome to my first html project
-    </h1>
-    <img src="../img/japanesePasport.png" alt="Kamron baby">
-    <p class="description">
-        Learn Java Backend Development
-    </p>
+    <header>
+        <h1 id="title">
+            Welcome to my first html project
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="htmlBasics.html#names">Teachers</a></li>
+                <li><a href="htmlBasics.html#courses">Courses</a></li>
+                <li><a href="htmlBasics.html#myLevel">Creator's level</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>
-        Courses
-    </h2>
-    <a href = "courses.html" target="_blank">Courses</a>
+    <main>
+        <section>
+            <form action="/login" method="POST">
+                <label for="username">Username</label>
+                <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="усурнаме"
+                    required><br>
+                <label for="password">Password</label>
+                <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="ah dih your password pls"
+                    required><br>
+                <!--TYPES-> NUMBER, EMAIL-->
+                <label>
+                    <input type="checkbox" name="termms" required>
+                    I agree to the terms
+                </label><br>
+                <!-- In checkbox you can choose multiple options at once -->
+                <button>Login</button><br><br>
+                <label>
+                    <input type="checkbox" name="fuh u" required>
+                    FUH U THAN
+                </label>
+            </form>
+            <img src="../img/japanesePasport.png" alt="Kamron baby">
+            <p class="description">
+                Learn Java Backend Development
+            </p>
+        </section>
+        <section>
+            <h2 id="courses">
+                Courses
+            </h2>
+            <a href="courses.html" target="_blank">Courses</a>
+            <h3>
+                Java Backend
+            </h3>
+            <ol>
+                <li>Java Core</li>
+                <li>OOP</li>
+            </ol>
+            <h3>
+                HTML
+            </h3>
+        </section>
+        <section>
+            <h2 id="names">
+                Teachers
+            </h2>
+            <ul>
+                <li>Math</li>
+                <li>Kmr</li>
+            </ul>
+            <a href="teachers.html">Teachers</a>
+            <h3>
+                Meet our instructors
+            </h3>
+        </section>
+        <article id="my_info">
+            <h2 id="myLevel">My level</h2>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>Level</th>
+                    <th>Duration of learning</th>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Beginner</td>
+                    <td>3 years</td>
+                </tr>
+                <tr>
+                    <td>html</td>
+                    <td>Beginner</td>
+                    <td>8 years of rest</td>
+                </tr>
+            </table>
 
-    <h3>
-        Java Backend
-    </h3>
-    <h3>
-        HTML
-    </h3>
+            <input type="radio" name="language" value="beginner">
+            Beginner<br>
+            <input type="radio" name="language" value="advanced">
+            Advanced
+            <!-- In Radio you can choose only one option-->
+        </article>
 
-    <h2>
-        Teachers
-    </h2>
-    <a href="teachers.html">Teachers</a>
+        <article>
+            <h4>
+                <label for="dihSize">Choose a guy with biggest DIH</label>
+                <select id="dihSize" name="dihs">
+                    <option value="kmr">KMR</option>
+                    <option value="shuxa">shuxa</option>
+                    <option value="Abdulaziz">Abdulaziz</option>
+                    <option value="sasadbekPrivet">Asad</option>
+                </select>
+            </h4>
+        </article>
+    </main>
 
-    <h3>
-        Meet our instructors
-    </h3>
-
-
-    <button class="primary">
-        Start learning
-    </button>
+    <footer>
+        <br><button class="primary">
+            Start learning
+        </button>
+    </footer>
 </body>
 </html>
